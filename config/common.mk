@@ -328,5 +328,8 @@ PRODUCT_COPY_FILES += \
 # Vendor configurations
 $(call inherit-product, vendor/custom/config.mk)
 
+# Optimisation
+$(call inherit-product, vendor/pixelstar/config/common/optimisation.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/pixelstar/config/partner_gms.mk
