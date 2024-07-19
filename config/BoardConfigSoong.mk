@@ -101,6 +101,7 @@ SOONG_CONFIG_pixelstarGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_
 SOONG_CONFIG_pixelstarGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_pixelstarGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 SOONG_CONFIG_pixelstarGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKAGE_NAME)
+SOONG_CONFIG_pixelstarGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
