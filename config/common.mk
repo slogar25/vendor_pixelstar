@@ -123,12 +123,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Skip boot JAR checks.
 SKIP_BOOT_JARS_CHECK := true
 
-# Bootanimation
-TARGET_SCREEN_WIDTH ?= 1080
-TARGET_SCREEN_HEIGHT ?= 1920
-PRODUCT_PACKAGES += \
-    bootanimation.zip
-
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
@@ -311,9 +305,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/pixelstar/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
     vendor/pixelstar/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml
-	
-# Bootanimation
-$(call inherit-product, vendor/pixelstar/config/bootanimation.mk)
 
 include vendor/pixelstar/config/branding.mk
 
