@@ -84,6 +84,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Google Apps
 $(call inherit-product, vendor/google/gms/products/gms.mk)
 
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
 
