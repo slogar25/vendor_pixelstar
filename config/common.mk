@@ -141,6 +141,10 @@ PRODUCT_PACKAGES += \
     libtextclassifier_actions_suggestions_universal_model \
     libtextclassifier_lang_id_model
 
+# Wallpaper
+PRODUCT_PACKAGES += \
+    PixelstarWallpaperStub
+
 # GameSpace
 PRODUCT_PACKAGES += \
     GameSpace
