@@ -336,5 +336,10 @@ $(call inherit-product, vendor/pixelstar/config/common/optimisation.mk)
 # Microsoft
 $(call inherit-product-if-exists, vendor/microsoft/mms/products/mms.mk)
 
+# Apps
+ifeq ($(ADD_CUSTOM_APPS),true)
+$(call inherit-product, vendor/apps/apps.mk)
+endif
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/pixelstar/config/partner_gms.mk
