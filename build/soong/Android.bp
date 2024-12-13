@@ -1,9 +1,5 @@
 // pixelstarOS soong configs
 
-cc_library_headers {
-    name: "qti_kernel_headers",
-    defaults: ["generated_kernel_header_defaults"],
-
 kernel_headers {
     name: "device_kernel_headers_system",
 }
